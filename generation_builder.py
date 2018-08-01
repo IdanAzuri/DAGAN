@@ -1,5 +1,6 @@
-import utils.interpolations
 import tqdm
+
+from utils import interpolations
 from utils.storage import *
 from tensorflow.contrib import slim
 

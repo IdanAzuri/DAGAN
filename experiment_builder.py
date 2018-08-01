@@ -175,7 +175,7 @@ class ExperimentBuilder(object):
                                 train_g_loss.append(g_train_loss_value)
                                 val_g_loss.append(g_val_loss_value)
 
-                                if iter % (self.tensorboard_update_interval) == 0:
+                                if iter % (self.tensorboard_update_interval + 1) == 0:
                                     self.train_writer.add_summary(train_summaries, global_step=self.iter_done)
                                     self.validation_writer.add_summary(val_summaries, global_step=self.iter_done)
 
